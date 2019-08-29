@@ -1,6 +1,7 @@
 FROM jonaseck/rpi-raspbian-libcec-py
 
-RUN apt-get update && apt-get install -y libxrandr2 liblircclient-dev
+RUN apt-get update 
+RUN apt-get install -y libxrandr2 liblircclient-dev
 #RUN rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /usr/src/app
